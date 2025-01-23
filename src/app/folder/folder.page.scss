@@ -26,3 +26,24 @@ ion-menu-button {
 #container a {
   text-decoration: none;
 }
+
+.card-content-wrapper {
+  display: flex;
+  justify-content: space-between;  /* Asegura que las dos columnas estén separadas */
+  align-items: center;             /* Centra los elementos verticalmente */
+}
+
+.text-column {
+  flex: 1;                         /* La columna de texto ocupa el 50% de la tarjeta */
+  padding-right: 15px;              /* Espacio entre el texto y la imagen */
+}
+
+.image-column {
+  flex: 0 0 auto;                   /* La columna de imagen tiene un tamaño fijo */
+}
+
+.movie-poster {
+  max-width: 100px;   /* Ajusta el tamaño máximo de la imagen */
+  max-height: 100px;  /* Ajusta la altura máxima */
+  object-fit: cover;  /* Evita distorsionar la imagen */
+}
